@@ -1,0 +1,13 @@
+<% const statusHelpers=(status, link)=> { %>
+    <a href="<%= link %>">
+        <% if (status==='active' ) { %>
+            <span class="label label-success">
+                Active
+            </span>
+            <% } else { %>
+                <span class="label label-warning">
+                    InActive
+                </span>
+                <% } %>
+    </a>
+    <% } %>
